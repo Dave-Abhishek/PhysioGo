@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="public/css/output.css">
+    <title>PhysioGo Registration page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body class="tw-bg-Cyan1 tw-flex tw-items-center tw-justify-center tw-font-josefin tw-text-Cyan">
+    <form action="function2.php" class="tw-mt-[1%] tw-w-5/12" method="POST">
+        <div
+            class="tw-bg-azure tw-flex tw-flex-col  tw-items-center tw-space-y-4 tw-mx-auto tw-rounded-2xl tw-px-[4rem] tw-shadow-2xl tw-shadow-Cyan">
+        <div>
+            <img src="logo.svg" alt="" width="100px" height="100px" onclick="window.location.href='index.html'">
+        </div>
+        <h1 class="tw-text-[30px] tw-font-bold">Registration</h1>
+        <div class="tw-w-full tw-flex tw-justify-center tw-border-b-[3px] tw-border-black">
+            <input type="email" id="email" placeholder="Email ID" name="email" class="tw-outline-none tw-w-full tw-bg-transparent" autocomplete="email">
+        </div>
+        <div class="tw-w-full tw-flex tw-justify-center tw-border-b-[3px] tw-border-black">
+            <input type="text" id="Fname" placeholder="First Name" name="Fname"
+                class="tw-outline-none tw-w-full tw-bg-transparent" required>
+        </div>
+        <div class="tw-w-full tw-flex tw-justify-center tw-border-b-[3px] tw-border-black tw-py-1 ">
+            <input type="text" id="Lname" name="Lname" placeholder="Last Name"
+                class="tw-outline-none tw-w-full tw-bg-transparent" required>
+        </div>
+        <div class="tw-w-full tw-flex tw-justify-center tw-border-b-[3px] tw-border-black tw-py-1 ">
+            <input type="tel" id="mob" placeholder="Mobile Number" name="mob"
+                class="tw-outline-none tw-w-full tw-bg-transparent" >
+                <!-- required pattern="[0-9]{9}"> -->
+        </div>
+        <div class="">
+            <label for="DOB" class="">Date of Birth: </label>
+            <input type="date" name="DOB" id="DOB" placeholder="Date of Birth"
+                class="tw-outline-none tw-bg-[#06b6d4] tw-text-white tw-p-[3px] tw-rounded-md">
+        </div>
+        <div class="tw-space-x-4 tw-w-full tw-flex tw-justify-center">
+            <label for="male">Male </label>
+            <input type="radio" name="gender" id="male" value="Male" required>
+            <label for="female">Female </label>
+            <input type="radio" name="gender" id="female" value="Female" required>
+        </div>
+        <div class="tw-container tw-mt-5 tw-text-Cyan tw-border-Cyan tw-flex tw-justify-center">
+            <select id="city-dropdown"
+                class="tw-bg-azure tw-border tw-border-Cyan tw-text-Cyan tw-text-sm tw-rounded-lg focus:tw-ring-blue-500 focus:tw-border-blue-500 tw-block tw-p-2.5"
+                name="city" required>
+                <option value="">Choose a city</option>
+                <option value="New Delhi">New Delhi</option>
+                <option value="Mumbai">Mumbai</option>
+                <option value="Kolkata">Kolkata</option>
+                <option value="Chennai">Chennai</option>
+                <option value="Surat">Surat</option>
+                <option value="Vadodara">Vadodara</option>
+                <option value="Ahmedabad">Ahmedabad</option>
+            </select>
+        </div>
+        <div class="tw-w-5/6 tw-flex tw-justify-center tw-border-b-[3px] tw-border-black ">
+            <input type="Password" name="Password" id="Password" placeholder="Password"
+                class="tw-outline-none tw-w-full tw-bg-transparent">
+        </div>
+        <div class="tw-w-5/6 tw-flex tw-justify-center tw-border-b-[3px] tw-border-black ">
+            <input type="Password" name="CPassword" id="CPassword" placeholder="Confirm Password"
+                class="tw-outline-none tw-w-full tw-bg-transparent">
+        </div>
+        <div>
+            <button type="submit"
+                class="hover:tw-text-white hover:tw-bg-Cyan  tw-border tw-border-Cyan tw-rounded tw-px-2 tw-transition-all tw-duration-500 tw-mb-3 tw-outline-none"
+                id="btn" onclick="formvalid()" name="patsub1">Submit</button>
+        </div>
+        </div>
+    </form>
+
+    <!-- <script src="script.js"></script> -->
+</body>
+
+</html>

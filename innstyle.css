@@ -1,0 +1,51 @@
+img {
+    height: 70vh;
+}
+
+#carouselExampleCaptions {
+    margin-top: 3%;
+    opacity: 90%;
+}
+
+h5 {
+    color: rgb(3, 59, 97);
+    background-color: azure;
+    max-width: fit-content;
+    margin: auto;
+    opacity: 0.7;
+}
+
+.container-fluid {
+    background-color: azure;
+    color: rgb(0, 105, 161);
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    position: relative;
+}
+.count-cont{
+    display: flex;
+    justify-content: space-between;
+    min-width: 60vw;
+}
+.counter {
+    /* border: 2px black solid; */
+    /* margin: 0 10%; */
+    /* min-width: 15vw; */
+    /* text-align: center; */
+    background-color: #03a2b7;
+    color: #ECFEFF;
+    min-height: 20vh;
+    min-width: 15vw;
+    display:flex;
+    padding: 0 15px;
+    border-radius: 10%;
+    justify-content: center;
+    align-items: center;
+}
+
+i {
+    margin-right: 3%;
+}

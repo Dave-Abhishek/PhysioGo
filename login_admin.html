@@ -1,0 +1,77 @@
+1<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style5.css">
+    <!-- <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> -->
+    <title>admin Login</title>
+    <style>
+        img {
+            width: 100px;
+            height: 100px;
+        }
+        .outtop
+        {
+            margin-top: 130px;
+        }
+        .btnad
+        {
+            background-color: azure;   
+            border:1px solid #00bcd4;
+            border-radius:10px;
+            padding:5px;
+            transition: all 0.5s;
+            color:00bcd4;
+        }
+        .btnad:hover
+        {
+            background-color:#00bcd4;
+            color:white;
+        }
+        .cent
+        {
+            display: flex;
+            flex-direction: column;
+            width:50vw;
+            align-items: center;
+            justify-content: space-around;
+            margin-left:20rem;
+            
+        }
+    </style>
+
+</head>
+
+<body>
+    <nav class="nav">
+        <div class="nav-logo">
+            <a href="index.html"><img src="logo.svg" class="logo" alt=""></a>
+            <!-- <img src="logo.svg" alt="" > -->
+        </div>
+        <div><span class="logoname">PhysioGO</span></div>
+    </nav>
+    <div class="outtop">
+        <div class="top">
+            <header>Login as Admin</header>
+        <form action="function3.php" method="POST" onsubmit="return validateAdminForm();">
+            <div class="cent">
+                <div class="input-box">
+                    <input type="text" class="form-control" placeholder="User Name *" name="username1" />
+                    <i class="bx bx-user"></i><br><br>
+                </div>
+                <div class="input-box">
+                    <input type="password" class="form-control" placeholder="Password *" name="password2" />
+                    <i class="bx bx-lock-alt"></i><br><br>
+                </div>
+            </div>
+            <div class="cent">
+                <input type="submit" class="btnad" name="adsub" value="Login" />
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>

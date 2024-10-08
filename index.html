@@ -1,0 +1,512 @@
+<!--DOCTYPE html-->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--==title========================-->
+    <title>PhysioGO</title>
+    <!--==Fav-icon=====================-->
+    <link rel="shortcut icon" href="images/logo.svg">
+
+    <!-- <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="innstyle.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!--==Font-Awesome-for-icons=====-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="Website.css">
+    <link rel="stylesheet" href="innstyle.css">
+    <style>
+  
+    .review-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* Three columns */
+        grid-gap: 20px;
+        padding: 20px;
+    }
+
+    .review-card {
+        background-color: #A5F3FC; /* cyan-100 for card background */
+        border: 1px solid #0085a1; /* Cyan1 for border */
+        border-radius: 10px;
+        padding: 20px;
+        transition: transform 0.3s ease-in-out;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        justify-content:center ;
+        /* text-align: center; */
+    }
+
+    .review-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 4px 8px #A5F3FC; /* cyan-200 for shadow */
+    }
+
+    .review-card img {
+        width: 120px; /* fixed size */
+        height: 120px; /* fixed size */
+        border-radius: 50%; /* circular */
+        margin: auto; /* centering */
+    }
+
+    .review-card h2, .review-card p {
+        margin: 10px 0;
+    }
+
+    .review-card h2 {
+        font-size: 20px;
+        color: #0085a1; /* Cyan1 for titles */
+    }
+
+    .review-card p {
+        font-size: 16px;
+        color: #006e89; /* Cyan for text */
+    }
+</style>
+
+</head>
+
+<body>
+
+    <!--==Hero-Section========================-->
+    <section id="hero">
+
+        <!--==navigation====================-->
+        <nav class="navigation">
+            <img src="images/logo.svg" alt="Hello" class="logo">
+            <ul class="menu">
+                <li><a href="#our-team">Find A Doctor</a></li>
+                <li><a href="#our-services">Our Services</a></li>
+                <li><a href="#testimonials">Testimonial's</a></li>
+            </ul>
+            <a href="index.php" class="nav-login-btn">Login</a>
+        </nav>
+
+        <!-- <div class="hero-content"> -->
+        <!--*text*****-->
+        <div class="hero-text">
+            <h1>Welcome to PhysioGO</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id, vitae ex! Fuga similique repudiandae
+                molestiae libero. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet illo aliquid
+                vero tempora dolore at, similique explicabo vel consequatur sapiente praesentium voluptates, culpa
+                doloremque ipsum suscipit. Nisi dolorum sed quae. Lorem ipsum dolor sit amet, consectetur adipisicing
+                elit. Nesciunt sapiente ipsam voluptatum adipisci quia dolorem, tempore voluptas asperiores provident
+                iusto illum, consectetur optio quibusdam libero dolore quidem eos accusantium iure.</p>
+            <!--btns-->
+            <!-- <div class="hero-text-btns">
+                    <a href="#"><i class="fa-solid fa-magnifying-glass"></i> Find Doctor's</a>
+                    <a href="#"><i class="fa-solid fa-check"></i> Book Appointment</a>
+                    <a href="login.html" target="_blank"><i class="fa-solid fa-check"></i> Doctor's Login</a>
+                </div> -->
+        </div>
+        <!-- </div> -->
+
+
+    </section><!--hero-end-->
+
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/img6-2.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Patient Success Stories</h5>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/img8.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>24x7 Emergency Services</h5>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/img9.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Compassionate Patient Care</h5>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+
+    <!--==service-info===========================-->
+    <section class="what-we-provide">
+
+        <!--*box1****-->
+        <div class="w-info-box w-i-box1">
+            <!--icon-->
+            <div class="w-info-icon">
+                <i class="fa-solid fa-capsules"></i>
+            </div>
+            <!--text-->
+            <div class="w-info-text">
+                <strong>Specialised Services</strong>
+            </div>
+        </div>
+        <!--*box2****-->
+        <div class="w-info-box w-i-box2">
+            <!--icon-->
+            <div class="w-info-icon">
+                <i class="fa-regular fa-comments"></i>
+            </div>
+            <!--text-->
+            <div class="w-info-text">
+                <strong>24/7 Advanced Care</strong>
+
+            </div>
+        </div>
+        <!--*box3****-->
+        <div class="w-info-box w-i-box3">
+            <!--icon-->
+            <div class="w-info-icon">
+                <i class="fa-solid fa-square-poll-horizontal"></i>
+            </div>
+            <!--text-->
+            <div class="w-info-text">
+                <strong>Experienced Physio - therapists</strong>
+
+            </div>
+        </div>
+
+    </section><!--end-->
+
+
+    <div class="container-fluid d-flex" id="counter">
+
+        <div class="whychoose">
+            <h2>Why Choose PhysioGO?</h2>
+            <p><i class="fa-regular fa-circle-check"></i>24x7 Emergency Services</p>
+            <p><i class="fa-regular fa-circle-check"></i>Expert Medical Professionals</p>
+            <p><i class="fa-regular fa-circle-check"></i>Personalized Treatment Plans</p>
+            <p><i class="fa-regular fa-circle-check"></i>Innovative Healthcare Solutions</p>
+            <p><i class="fa-regular fa-circle-check"></i>At Home Service</p>
+        </div>
+        <div class="count-cont m-auto">
+            <div>
+                <div class="counter" id="patient" style="font-size: 10vh;">0</div>
+                <center>Happy Patients</center>
+            </div>
+            <div>
+                <div class="counter" id="city" style="font-size: 10vh;">0</div>
+                <center>Cities</center>
+            </div>
+            <div>
+                <div class="counter" id="doc" style="font-size: 10vh;">0</div>
+                <center>Physiotherapists</center>
+            </div>
+        </div>
+    </div>
+    
+    <!--==Our-Services======================-->
+    <section id="our-services">
+
+        <!--*heading*******-->
+        <div class="services-heading">
+            <!--text-->
+            <div class="services-heading-text">
+                <strong>Our Services</strong>
+                <h2>Conditions To Seek Physiotherapy</h2>
+            </div>
+            <!--btns-->
+            <div class="service-slide-btns">
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+
+        <!--*container******-->
+        <div class="services-box-container">
+
+            <!-- Swiper -->
+            <div class="swiper mySwiperservices">
+                <div class="swiper-wrapper">
+                    <!--*1**-->
+                    <div class="swiper-slide">
+                        <!--*box1*-->
+                        <div class="service-box s-box1">
+                            <strong>Knee Pain</strong>
+                            <img src="images/knee.jpg" alt="">
+                            <!--details-->
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem ullam perspiciatis
+                                impedit consequuntur</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="service-box s-box2">
+                            <strong>Shoulder Pain</strong>
+                            <img src="images/shoulder.jfif" alt="">
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem ullam perspiciatis
+                                impedit consequuntur</p>
+                        </div>
+                    </div><!--slide-end-->
+                    <!--*1**-->
+                    <div class="swiper-slide">
+                        <!--*box1*-->
+                        <div class="service-box s-box3">
+                            <strong>Back Pain</strong>
+                            <img src="images/back.jpg" alt="">
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem ullam perspiciatis
+                                impedit consequuntur</p>
+                        </div>
+                    </div><!--slide-end-->
+                    <div class="swiper-slide">
+                        <!--*box1*-->
+                        <div class="service-box s-box1">
+                            <strong>Surgery</strong>
+                            <img src="images/surgery.jfif" alt="">
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem ullam perspiciatis
+                                impedit consequuntur</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="service-box s-box2">
+                            <strong>Limbs Movement</strong>
+                            <img src="images/limbs.jpg" alt="">
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem ullam perspiciatis
+                                impedit consequuntur</p>
+                        </div>
+                    </div><!--slide-end-->
+                    <div class="swiper-slide">
+                        <!--*box1*-->
+                        <div class="service-box s-box3">
+                            <strong>Neck Movement</strong>
+                            <img src="images/neck.jpg" alt="">
+                            <!--details-->
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem ullam perspiciatis
+                                impedit consequuntur</p>
+                        </div>
+                    </div><!--slide-end-->
+
+                </div><!--wrapper-end-->
+            </div><!--swiper-end-->
+        </div>
+
+    </section><!--services-end-->
+
+    <!--==Story=============================-->
+    <section id="our_story">
+
+        <div class="our-story-img">
+            <img src="images/story.jpg">
+        </div>
+        <div class="our-stroy-text">
+            <h2>Our Vision</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae quae ad aliquid in porro. Harum ipsa
+                debitis deserunt ad facilis maxime! Accusantium ratione vitae quae repellendus, dolor debitis minima
+                maiores.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab accusamus explicabo alias magni mollitia ea
+                excepturi! Aliquam temporibus <a>Read More</a></p>
+
+    </section><!--story-end-->
+    <!-- Review Section -->
+    <!-- <h1>High-Tech Review Page</h1> -->
+    <div class="review-container"></div>
+    <footer>
+        <div class="footer-container">
+            <!--*comoany-box*-->
+            <div class="footer-company-box">
+                <!--logo-->
+                <img src="images/logo.svg" class="logo" alt="" style="margin-right: 10px;"> <strong>PhysioGO</strong>
+                <!--details-->
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi quas neque repudiandae nihil.</p>
+                <!--social-box-->
+                <div class="footer-social">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+            <!--*link-box**-->
+            <div class="footer-link-box">
+                <strong>Main Links</strong>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                </ul>
+            </div>
+            <!--*link-box**-->
+            <div class="footer-link-box">
+                <strong>External Links</strong>
+                <ul>
+                    <li><a href="#">Our Product's</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Disclaimer</a></li>
+                    <li><a href="#">Trem's and Condition's</a></li>
+                </ul>
+            </div>
+            <!--*link-box**-->
+            <div class="footer-link-box">
+                <strong>External Links</strong>
+                <ul>
+                    <li><a href="#">Our Product's</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Disclaimer</a></li>
+                    <li><a href="#">Trem's and Condition's</a></li>
+                </ul>
+            </div>
+
+
+        </div>
+        <!-- Swiper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+        <!-- Initialize Swiper -->
+        <script>
+            /-services--/
+            var swiper = new Swiper(".mySwiperservices", {
+                slidesPerView: 1,
+                spaceBetween: 10,
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+                breakpoints: {
+                    700: {
+                        slidesPerView: 2,
+                        spaceBetween: 40,
+                    },
+                    1024: {
+                        slidesPerView: 3,
+                        spaceBetween: 50,
+                    },
+                },
+            });
+            /--team--/
+            var swiper = new Swiper(".mySwiperteam", {
+                slidesPerView: 1,
+                spaceBetween: 10,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                breakpoints: {
+                    560: {
+                        slidesPerView: 2,
+                        spaceBetween: 20,
+                    },
+                    950: {
+                        slidesPerView: 3,
+                        spaceBetween: 40,
+                    },
+                    1250: {
+                        slidesPerView: 4,
+                        spaceBetween: 40,
+                    },
+                },
+            });
+            /--testimonials--/
+            var swiper = new Swiper(".mySwipertesti", {
+                pagination: {
+                    el: ".swiper-pagination",
+                },
+            });
+        </script>
+        <script>//counter
+            let flag = 0;
+            window.onscroll = function () { myFunction() };
+
+            function myFunction() {
+                var testDivFromTop = document.getElementById("counter").offsetTop;
+                var pageHeight = window.innerHeight;
+                if (flag == 0 && (document.body.scrollTop > testDivFromTop - pageHeight || document.documentElement.scrollTop > testDivFromTop - pageHeight)) {
+                    flag = 1;
+                    animateCounter("patient", 5000, 3);
+                    animateCounter("city", 20, 3);
+                    animateCounter("doc", 120, 3);
+                }
+            }
+            function animateCounter(id, endValue, duration) {
+                let start = 0;
+                let increment = endValue / (duration * 1000 / 50); // 50ms interval
+                let counterElement = document.getElementById(id);
+
+                let intervalId = setInterval(() => {
+                    start += increment;
+                    counterElement.textContent = Math.round(start);
+                    if (start >= endValue) {
+                        clearInterval(intervalId);
+                        counterElement.textContent = endValue + "+";
+                    }
+                }, 50);
+            }
+
+        </script>
+        <script>
+            const content = [
+                // Populate your content array here with { id, src, name, meaning }
+                { id: 1, src: "review.png", name: "Doctor 1", meaning: "As someone who has visited multiple physiotherapy clinics, I can confidently say that this one stands out for its expertise and experience. The therapists here possess a wealth of knowledge and experience, allowing them to tailor treatment plans that deliver tangible results. Whether you're recovering from surgery or managing a chronic condition, you're in capable hands here." },
+                { id: 2, src: "review.png", name: "Doctor 2", meaning: "From the moment you walk through the door, you're greeted by a warm and welcoming atmosphere at this physiotherapy clinic. The staff are friendly, attentive, and genuinely invested in your well-being. It's not just a place for rehabilitation; it's a community that supports and motivates you every step of the way." },
+                { id: 3, src: "review.png", name: "Product 3", meaning: "I've been to many physiotherapy clinics over the years, but none have been as effective as this one. The therapists here are truly dedicated to helping their patients achieve their goals. With a combination of hands-on therapy, targeted exercises, and personalized care, they facilitate not just recovery, but a return to optimal function and performance." },
+                { id: 4, src: "review.png", name: "Doctor 4", meaning: "The holistic approach at this physiotherapy clinic truly sets it apart. They don't just treat the symptoms; they address the root cause of the issue. The therapists are attentive, compassionate, and skilled, guiding patients through every step of their healing journey with expertise and care" },
+                { id: 5, src: "review.png", name: "Doctor 5", meaning: "As someone who has visited multiple physiotherapy clinics, I can confidently say that this one stands out for its expertise and experience. The therapists here possess a wealth of knowledge and experience, allowing them to tailor treatment plans that deliver tangible results.." },
+                { id: 6, src: "review.png", name: "Doctor 6", meaning: "I can't thank the team at this physiotherapy clinic enough for the life-changing transformations they've facilitated. Whether it's helping someone regain mobility after a stroke or managing chronic pain more effectively, they consistently deliver exceptional care that restores hope and enhances quality of life." },
+                { id: 7, src: "review.png", name: "Doctor 7", meaning: "I can't thank the team at this physiotherapy clinic enough for the life-changing transformations they've facilitated. Whether it's helping someone regain mobility after a stroke or managing chronic pain more effectively, they consistently deliver exceptional care that restores hope and enhances quality of life." },
+                { id: 8, src: "review.png", name: "Doctor 8", meaning: "I can't thank the team at this physiotherapy clinic enough for the life-changing transformations they've facilitated. Whether it's helping someone regain mobility after a stroke or managing chronic pain more effectively, they consistently deliver exceptional care that restores hope and enhances quality of life." },
+                { id: 9, src: "review.png", name: "Doctor 9", meaning: "I can't thank the team at this physiotherapy clinic enough for the life-changing transformations they've facilitated. Whether it's helping someone regain mobility after a stroke or managing chronic pain more effectively, they consistently deliver exceptional care that restores hope and enhances quality of life." }
+            ];
+    
+            function createReviewCard(item) {
+                const card = document.createElement('div');
+                card.className = 'review-card';
+    
+                const image = document.createElement('img');
+                image.src = item.src;
+                image.alt = item.name;
+    
+                const name = document.createElement('h2');
+                name.textContent = item.name;
+    
+                const meaning = document.createElement('p');
+                meaning.textContent = item.meaning;
+    
+                card.appendChild(image);
+                card.appendChild(name);
+                card.appendChild(meaning);
+    
+                return card;
+            }
+    
+            function renderReviewCards() {
+                const reviewContainer = document.querySelector('.review-container');
+                content.forEach(item => {
+                    const card = createReviewCard(item);
+                    reviewContainer.appendChild(card);
+                });
+            }
+    
+            renderReviewCards();
+        </script>
+</body>
+
+</html>
